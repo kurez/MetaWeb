@@ -1,8 +1,14 @@
 <template>
     <div>
 
-        <section class="section section-lg">
+       
+            <div class="overlay">
+               
+        <section class="section section-lg" style="background-image: url('https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80'); background-repeat: no-repeat; background-size: cover; ">
+           
             <div class="container-fluid">
+               
+            
                 <div class="container-inner">
                     <div class="main-content">
                     <div class="main-headings" id="main-headings-js">
@@ -10,7 +16,7 @@
 
                     <div class="heading">
                         <h3 id="heading1">Experince</h3>
-                        <h3 id="heading2">The</h3>
+                        <h3 id="heading2">Meta</h3>
                         <h1 id="heading3">Wild</h1>
                     </div>
 
@@ -23,7 +29,7 @@
 
                     <a href="#" class="link" onclick="readMore()">Read More</a>
                     </div>
-                    
+                    <br>
                     <div class="more-info " id="more-info-js">
                         
                         <h4 style=" color: #cacfaf;">More About Us</h4>
@@ -39,14 +45,16 @@
 
                     <div class="image-wrapper">
                     <div class="image-container">
-                    <img class="image" src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=755bbb2b0afd5808494a8723774cd141" alt="image of a young woman.">
+                    <img class="image" src="https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80" alt="image of a young woman.">
                     </div>
                 </div>
+               
                 </div>
                 </div>
         </section>
-
-    </div>
+         </div> 
+ </div>
+   
 </template>
 
 <script>
@@ -60,7 +68,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.7;
+  z-index: 1;
+}
 //Font
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 
@@ -168,7 +185,7 @@ body {
   width: 1200px;
   height: 700px;
   color: #fff;
-  background-color:transparent ;
+  background-color: rgba(255,255,255,.06);
   font-size: 14px;
   font-family: "Jura", sans-serif;
   .container-inner { 
@@ -209,7 +226,7 @@ body {
           #heading1, #heading2, #heading3 {
             margin: 0;
             margin-top: -20px;
-             color: #fff;
+             color: #f34dc3;
           }
           #heading1, #heading2 {
             font-size: 500%;
@@ -224,7 +241,7 @@ body {
           }
           #heading3 {
             margin-top: -52px;
-            font-size: 1100%;
+            font-size: 800%;
             font-weight: 800;
             letter-spacing: 2px;
            
@@ -246,7 +263,7 @@ body {
           font-size: 120%;
           font-family: helvetica;
           text-decoration: none;
-          color: #fff;
+          color: #f34dc3;
           &:hover {
             text-decoration: underline;
           }

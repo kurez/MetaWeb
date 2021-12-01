@@ -117,7 +117,7 @@ export default {
   color: #212529;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
-  color: #ff0000 !important;
+  color: #f34DC3 !important;
   font-weight: 800;
 }
 @media (min-width: 992px) {
@@ -155,7 +155,7 @@ export default {
     color: #fff;
   }
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
-    color: #ff0000;
+    color: #f34DC3;
 
   }
 }
