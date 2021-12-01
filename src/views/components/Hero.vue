@@ -32,21 +32,21 @@
                     </div>
                     </div>
                 <div class="row">
-                    <div class="button2">
+                <router-link to="/metawild" class="hero-btn">
                   <span></span>
                   <span></span>
                   <span></span>
                   <span></span>
                  <i class="ni ni-user-run" style="margin-right: 8px"></i> Get started
-                </div>
+                </router-link>
 
-                    <div class="button2">
+                <router-link to="/tokenomics" class="hero-btn">
                   <span></span>
                   <span></span>
                   <span></span>
                   <span></span>
-                 <i class="ni ni-user-run" style="margin-right: 8px"></i> Get started
-                </div>
+                 <i class="ni ni-world" style="margin-right: 8px"></i> Metaverse
+                </router-link>
                 </div>
 
                
@@ -269,7 +269,7 @@ header .overlay {
   }
 }
 
-.button2 {
+.hero-btn {
   position: relative;
   display: inline-block;
   padding: 20px 51px;

@@ -78,15 +78,15 @@
                                             <div></div>
                                             <div></div>
                                         </div>
-                                        <a href="/" class="hex-content">
+                                        <router-link to="/" class="hex-content">
                                             <span class="hex-content-inner">
                                                 <span class="icon">
                                                     <i class="fa fa-universal-access"></i>
                                                 </span>
-                                                <span class="title">Welcome</span>
+                                                <span class="title">Home</span>
                                             </span>
                                             <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#fff"></path></svg>
-                                        </a>
+                                        </router-link>
                                     </div>
                                     </div>
                                      <div class="col-lg-3">
@@ -101,7 +101,7 @@
                                             <div></div>
                                             <div></div>
                                         </div>
-                                        <a  class="hex-content">
+                                         <router-link to="/metawild" class="hex-content">
                                             <span class="hex-content-inner">
                                                 <span class="icon">
                                                     <i class="fa fa-bullseye"></i>
@@ -109,7 +109,7 @@
                                                 <span class="title">About</span>
                                             </span>
                                             <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#fff"></path></svg>
-                                        </a>
+                                         </router-link>
                                     </div>
                                      </div>
                                     
@@ -125,15 +125,15 @@
                                             <div></div>
                                             <div></div>
                                         </div>
-                                        <a  class="hex-content">
+                                         <router-link to="/token" class="hex-content">
                                             <span class="hex-content-inner">
                                                 <span class="icon">
                                                     <i class="fa fa-braille"></i>
                                                 </span>
-                                                <span class="title">Services</span>
+                                                <span class="title">Metawild</span>
                                             </span>
                                             <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#fff"></path></svg>
-                                        </a>    
+                                         </router-link>    
                                     </div>
                                      </div>
                                       <div class="col-lg-3">
@@ -363,7 +363,7 @@ body {
       transform: rotate(120deg); }
 
 .hex-content {
-  color: #fff;
+  color: #000;
   display: block;
   height: 180px;
   margin: 0 auto;
@@ -395,7 +395,7 @@ body {
     text-transform: uppercase; }
   .hex-content svg {
     left: -7px;
-    background-color: #000;
+    background-color: transparent;
     position: absolute;
     top: -13px;
     transform: scale(0.87);
@@ -617,8 +617,8 @@ body {
   margin: 0;
   z-index: 9;
   overflow: hidden;
-  box-shadow: 0 8px 30px 0 rgba(0,0,0,0.3);
-  background-color: #000;
+  box-shadow: 0 8px 30px 0 rgba(168, 168, 168, 0.3);
+  background-color: rgba(0, 0, 0, 0.7);
   animation: border-transform 7s linear infinite;
   transition: top 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1),  
               right 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1),
