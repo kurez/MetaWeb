@@ -56,14 +56,14 @@
         </base-nav> -->
     <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
   	    <label for="menu-icon"></label>
-        <nav class="nav"> 		<br><br><br>
+        <nav class="nav"> 	
+          	<br><br><br>
             
 
                     <div class="container" style="margin-top: 21%">
                         <div class="row">
                             <div class="col-lg-12">
-                              
-                                
+                               
                                 <div class="hexagon-menu clear">
                                     <div class="row">
                                         <div class="col-lg-3">
@@ -78,7 +78,7 @@
                                             <div></div>
                                             <div></div>
                                         </div>
-                                        <a  class="hex-content">
+                                        <a href="/" class="hex-content">
                                             <span class="hex-content-inner">
                                                 <span class="icon">
                                                     <i class="fa fa-universal-access"></i>

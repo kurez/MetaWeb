@@ -4,7 +4,7 @@
        
             <div class="overlay">
                
-        <section class="section section-lg" style="background-image: url('https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80'); background-repeat: no-repeat; background-size: cover; ">
+        <section class="section section-lg" style="background-image: url('img/brand/about_bg.jpg'); background-repeat: no-repeat; background-size: cover; ">
            
             <div class="container-fluid">
                
