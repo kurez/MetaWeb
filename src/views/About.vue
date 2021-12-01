@@ -27,12 +27,12 @@
                 
                     </div>
 
-                    <a href="#" class="link" onclick="readMore()">Read More</a>
+                    <a href="#" class="link btn" onclick="readMore()">Read More <i class="ni ni-bold-right" style="margin-left: 2px;margin-top: -20%"></i></a>
                     </div>
                     <br>
                     <div class="more-info " id="more-info-js">
                         
-                        <h4 style=" color: #cacfaf;">More About Us</h4>
+                        <h4 style="color: #fff">More About Us</h4>
 
                         <p>
                             MetaWild's vision is to make people money safely and securely 
@@ -45,7 +45,7 @@
 
                     <div class="image-wrapper">
                     <div class="image-container">
-                    <img class="image" src="https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80" alt="image of a young woman.">
+                    <img class="image" src="img/crypto-icons/isolated svg/AugmentedReality_16.svg" alt="AugmentedReality_16">
                     </div>
                 </div>
                
@@ -226,7 +226,7 @@ body {
           #heading1, #heading2, #heading3 {
             margin: 0;
             margin-top: -20px;
-             color: #f34dc3;
+             color: #cacfaf;
           }
           #heading1, #heading2 {
             font-size: 500%;
@@ -263,7 +263,7 @@ body {
           font-size: 120%;
           font-family: helvetica;
           text-decoration: none;
-          color: #f34dc3;
+          color: #cacfaf;
           &:hover {
             text-decoration: underline;
           }
