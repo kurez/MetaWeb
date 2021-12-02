@@ -5,7 +5,97 @@
 
       <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
       <div class="overlay">
-         <particles-bg color="#ffffff" rps=100 num=44 type="cobweb" :bg="true" />
+                <Particles
+                id="tsparticles"
+                :particlesInit="particlesInit"
+                :particlesLoaded="particlesLoaded"
+                url="http://foo.bar/particles.json"
+        />
+
+        <!-- or -->
+
+        <Particles
+                id="tsparticles"
+                :particlesInit="particlesInit"
+                :particlesLoaded="particlesLoaded"
+                :options="{
+                    background: {
+                        color: {
+                            value: 'transparent'
+                        }
+                    },
+                    fpsLimit: 60,
+                    interactivity: {
+                        events: {
+                            onClick: {
+                                enable: false,
+                                mode: 'push'
+                            },
+                            onHover: {
+                                enable: false,
+                                mode: 'attract'
+                            },
+                            resize: true
+                        },
+                        modes: {
+                            bubble: {
+                                distance: 400,
+                                duration: 2,
+                                opacity: 0.8,
+                                size: 40
+                            },
+                            push: {
+                                quantity: 2
+                            },
+                            repulse: {
+                                distance: 100,
+                                duration: 0.4
+                            }
+                        }
+                    },
+                    particles: {
+                        color: {
+                            value: '#949a78'
+                        },
+                        links: {
+                            color: '#949a78',
+                            distance: 150,
+                            enable: true,
+                            opacity: 0.6,
+                            width: 1
+                        },
+                        collisions: {
+                            enable: true
+                        },
+                        move: {
+                            direction: 'none',
+                            enable: true,
+                            outMode: 'bounce',
+                            random: false,
+                            speed: 0.6,
+                            straight: false
+                        },
+                        number: {
+                            density: {
+                                enable: true,
+                                value_area: 800
+                            },
+                            value: 44
+                        },
+                        opacity: {
+                            value: 0.6
+                        },
+                        shape: {
+                            type: 'circle'
+                        },
+                        size: {
+                            random: true,
+                            value: 5
+                        }
+                    },
+                    detectRetina: true
+                }"
+        />
       </div>
 
       <iframe frameborder="0" height="100%" width="100%" src="https://youtube.com/embed/tz8Puc4W5BM?autoplay=1&controls=0&showinfo=0&autohide=1&mute=1"></iframe>

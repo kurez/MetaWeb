@@ -10,7 +10,11 @@ import VueMaterial from 'vue-material'
 // import 'vue-material/dist/theme/default-dark.css' // This line here
 
 
-Vue.use(VueMaterial)
+// Vue.use(VueMaterial)
+
+import Particles from "particles.vue";
+
+Vue.use(Particles);
 
 import "@/assets/vendor/nucleo/css/nucleo.css";
 import "@/assets/vendor/font-awesome/css/font-awesome.css";
