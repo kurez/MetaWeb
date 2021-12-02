@@ -66,7 +66,7 @@
                                
                                 <div class="hexagon-menu clear">
                                     <div class="row">
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-3 col-xs-6">
                                     <div class="hexagon-item">
                                         <div class="hex-item">
                                             <div></div>
@@ -81,7 +81,7 @@
                                         <router-link to="/" class="hex-content">
                                             <span class="hex-content-inner">
                                                 <span class="icon">
-                                                    <i class="fa fa-universal-access"></i>
+                                                    <i class="ni ni-planet"></i>
                                                 </span>
                                                 <span class="title">Home</span>
                                             </span>
@@ -89,7 +89,7 @@
                                         </router-link>
                                     </div>
                                     </div>
-                                     <div class="col-lg-3">
+                                     <div class="col-lg-3 col-xs-6">
                                     <div class="hexagon-item">
                                         <div class="hex-item">
                                             <div></div>
@@ -104,7 +104,7 @@
                                          <router-link to="/metawild" class="hex-content">
                                             <span class="hex-content-inner">
                                                 <span class="icon">
-                                                    <i class="fa fa-bullseye"></i>
+                                                    <i class="ni ni-user-run"></i>
                                                 </span>
                                                 <span class="title">About</span>
                                             </span>
@@ -113,7 +113,7 @@
                                     </div>
                                      </div>
                                     
-                                     <div class="col-lg-3">
+                                     <div class="col-lg-3 col-xs-6">
                                     <div class="hexagon-item">
                                         <div class="hex-item">
                                             <div></div>
@@ -128,15 +128,15 @@
                                          <router-link to="/tokenomics" class="hex-content">
                                             <span class="hex-content-inner">
                                                 <span class="icon">
-                                                    <i class="fa fa-braille"></i>
+                                                    <i class="ni ni-money-coins"></i>
                                                 </span>
-                                                <span class="title">Metawild</span>
+                                                <span class="title">Token</span>
                                             </span>
                                             <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#fff"></path></svg>
                                          </router-link>    
                                     </div>
                                      </div>
-                                      <div class="col-lg-3">
+                                      <div class="col-lg-3 col-xs-6">
                                     <div class="hexagon-item">
                                         <div class="hex-item">
                                             <div></div>
@@ -150,10 +150,10 @@
                                         </div>
                                        <router-link to="/contact" class="hex-content">
                                             <span class="hex-content-inner">
-                                                <span class="icon">
-                                                    <i class="fa fa-id-badge"></i>
+                                                <span class="icon" style="margin-left: 25px">
+                                                    <i class="ni ni-collection"></i>
                                                 </span>
-                                                <span class="title">Contact us</span>
+                                                <span class="title">Whitepaper</span>
                                             </span>
                                             <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#fff"></path></svg>
                                        </router-link>
@@ -281,7 +281,7 @@ body {
         height: 5px; }
     .hexagon-item:hover .hex-item div::before,
     .hexagon-item:hover .hex-item div::after {
-      background-color: #f34dc3; }
+      background-color: #cacfaf; }
     .hexagon-item:hover .hex-content svg {
       -webkit-transform: scale(0.97);
       -moz-transform: scale(0.97);
@@ -405,7 +405,7 @@ body {
     -o-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
     transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s; }
   .hex-content:hover {
-    color: #f34dc3; }
+    color: #cacfaf ; }
 
 .page-home .hexagon-item:nth-last-child(1), .page-home .hexagon-item:nth-last-child(2), .page-home .hexagon-item:nth-last-child(3) {
     -webkit-transform: rotate(30deg) translate(87px, -80px);
@@ -445,7 +445,7 @@ body {
 
 .hexagon-item:hover .icon i
 {
-  color:#f34dc3;
+  color:#cacfaf ;
   transition:0.6s;
   
 }
@@ -558,8 +558,8 @@ body {
   z-index: 20;
   top: 0;
   left: 0;
-  border-top: 2px solid #fff;
-  border-bottom: 2px solid #fff;
+  border-top: 2px solid #cacfaf ;
+  border-bottom: 2px solid #cacfaf ;
   transition: border-width 100ms 1500ms ease, 
               top 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1),
               height 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1), 
@@ -576,7 +576,7 @@ body {
   z-index: 20;
   top: 10px;
   right: 4px;
-  background-color: #fff;
+  background-color: #cacfaf ;
   margin-top: -1px;
   transition: width 100ms 1750ms ease, 
               right 100ms 1750ms ease,
@@ -587,7 +587,7 @@ body {
   top: 10px;
   transform: rotate(45deg);
   height: 2px;
-  background-color: #fff;
+  background-color: #cacfaf ;
   border-width: 0;
   transition: border-width 100ms 340ms ease, 
               top 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1),

@@ -22,7 +22,7 @@
                     <div class="animated-title">
                       <div class="text-top">
                         <div>
-                          <img src="img/brand/metawild-light-transparent.png" alt="hero-logo" >
+                          <img src="img/brand/metawild-light-transparent.png" alt="hero-logo" class="hero-logo">
                           <span>Explore The Wild</span>
                         </div>
                       </div>
@@ -31,7 +31,7 @@
                       </div>
                     </div>
                     </div>
-                <div class="row">
+                <div class="row col-xs-hidden">
                 <router-link to="/metawild" class="hero-btn">
                   <span></span>
                   <span></span>
@@ -45,10 +45,9 @@
                   <span></span>
                   <span></span>
                   <span></span>
-                 <i class="ni ni-world" style="margin-right: 8px"></i> Metaverse
+                 <i class="ni ni-world-2" style="margin-right: 8px"></i> Metaverse
                 </router-link>
                 </div>
-
                
                 </div> 
 
@@ -77,6 +76,8 @@ export default {
 
 
 <style lang="scss" scoped>
+
+/* header with video */
 
 header {
   position: relative;
@@ -133,17 +134,21 @@ header .overlay {
 }
 
 
-// animated-text
-
+/* animated-text */
+.hero-logo{
+  width: 100%;
+}
 @keyframes showTopText {
   0% { transform: translate3d(0, 100%, 0); }
   40%, 60% { transform: translate3d(0, 50%, 0); }
   100% { transform: translate3d(0, 0, 0); }
 }
+
 @keyframes showBottomText {
   0% { transform: translate3d(0, -100%, 0); }
   100% { transform: translate3d(0, 0, 0); }
 }
+
 .animated-title {
   color: #fff;
   font-family: 'Jura' sans-serif;
@@ -154,24 +159,29 @@ header .overlay {
   transform: translate(-50%, -50%);
   width: 100%;
 }
+
 .animated-title > div {
   height: 50%;
   overflow: hidden;
   position: absolute;
   width: 100%;
 }
+
 .animated-title > div div {
   font-size: 6.477vmin;
   padding: 2vmin 0;
   position: absolute;
 }
+
 .animated-title > div div span {
   display: block;
 }
+
 .animated-title > div.text-top {
   border-bottom: 0.5vmin solid #fff;
   top: 0;
 }
+
 .animated-title > div.text-top div {
   animation: showTopText 1s;
   animation-delay: 0.5s;
@@ -179,12 +189,15 @@ header .overlay {
   bottom: 0;
   transform: translate(0, 100%);
 }
+
 .animated-title > div.text-top div span:first-child {
   color: #fff;
 }
+
 .animated-title > div.text-bottom {
   bottom: 0;
 }
+
 .animated-title > div.text-bottom div {
   font-size: 1.6vmin;
   animation: showBottomText 0.5s;
@@ -195,79 +208,7 @@ header .overlay {
 }
 
 
-.button {
-  border: 2px solid #d2bdff;
-  height: 80px;
-  width: 200px;
-  border-radius: 4px;
-  position: relative;
-  cursor: pointer;
-  font-family: "Roboto", sans-serif;
-  margin: 25px;
-
-  &::after {
-    content: "HOVER ME";
-    position: absolute;
-    top: 41%;
-    left: 50%;
-    transform: translate(-50%);
-    color: #d2bdff;
-    transition: all 0.1s linear;
-  }
-
-  &::before {
-    content: "";
-    position: relative;
-    display: block;
-    height: 15px;
-    width: 15px;
-    background: #d2bdff;
-    box-shadow: 0px 0px 10px 3px #0ff;
-    margin-left: -8px;
-    margin-top: -8px;
-    opacity: 0;
-    transition: all 0.1s linear;
-    border-radius: 100%;
-    animation: star 1.3s linear infinite;
-  }
-
-  @keyframes star {
-    0% {
-      margin-left: -8px;
-      margin-top: -8px;
-    }
-    25% {
-      margin-left: 194px;
-      margin-top: -8px;
-    }
-
-    50% {
-      margin-left: 194px;
-      margin-top: 75px;
-    }
-    75% {
-      margin-left: -8px;
-      margin-top: 75px;
-    }
-    100% {
-      margin-left: -8px;
-      margin-top: -8px;
-    }
-  }
-
-  &:hover {
-    &::before {
-      opacity: 1;
-      animation: star 1.3s linear infinite;
-    }
-
-    &::after {
-      content: "I'M GLOWING";
-      text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #82bedc,
-        0 0 30px #82bedc, 0 0 40px #82bedc, 0 0 50px #82bedc, 0 0 60px #82bedc;
-    }
-  }
-}
+/*  hero button */
 
 .hero-btn {
   position: relative;
@@ -276,6 +217,7 @@ header .overlay {
   margin-right: 17.32px;
   border-radius: 2px;
   color: #fff;
+  min-width: 160px;
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
@@ -340,6 +282,7 @@ header .overlay {
         animation: animate3 1s linear infinite;
         animation-delay: 0.5s;
       }
+      
       @keyframes animate3 {
         0% {
           right: -100%;
@@ -374,6 +317,8 @@ header .overlay {
     }
   }
 }
+
+
 
 </style>
 
