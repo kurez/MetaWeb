@@ -184,7 +184,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  height: 700px;
+  height: 750px;
   color: #fff;
   background-color: rgba(255,255,255,.06);
   font-size: 14px;
