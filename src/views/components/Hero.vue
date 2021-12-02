@@ -178,7 +178,7 @@ header .overlay {
 }
 
 .animated-title > div.text-top {
-  border-bottom: 0.5vmin solid #fff;
+  border-bottom: 0.3vmin solid #cacfaf;
   top: 0;
 }
 
@@ -229,6 +229,7 @@ header .overlay {
 
   &:hover {
     border: 1px solid transparent;
+    color: #cacfaf;
     span {
       position: absolute;
       display: block;
