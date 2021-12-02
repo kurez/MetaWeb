@@ -5,13 +5,16 @@
 
       <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
       <div class="overlay">
-         <particles-bg color="#ffffff" num=200 type="cobweb" :bg="true" />
+         <particles-bg color="#ffffff" rps=100 num=44 type="cobweb" :bg="true" />
       </div>
 
       <iframe frameborder="0" height="100%" width="100%" src="https://youtube.com/embed/tz8Puc4W5BM?autoplay=1&controls=0&showinfo=0&autohide=1&mute=1"></iframe>
 
       <!-- The header content -->
+      <div class="container-fluid h-100">
+         
       <div class="container h-100">
+       
         <div class="d-flex h-100 text-center align-items-center">
           <div class="w-100 text-white">
             
@@ -56,6 +59,7 @@
               
               </div>
             </div>
+          </div>
           </div>
       
     </header>
