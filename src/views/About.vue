@@ -2,10 +2,11 @@
     <div>
 
        
-            <div class="overlay">
+            
                
         <section class="section section-lg" style="background-image: url('img/brand/about_bg.jpg'); background-repeat: no-repeat; background-size: cover; ">
-           
+           <!-- <div class="overlay">
+               </div>  -->
             <div class="container-fluid">
                
             
@@ -52,7 +53,7 @@
                 </div>
                 </div>
         </section>
-         </div> 
+        
  </div>
    
 </template>
