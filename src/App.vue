@@ -3,9 +3,8 @@
         <router-view name="header"></router-view>
         <main>
             <transition
-              mode="out-in"
-              enter-active-class="animate__animated animate__fadeIn"
-              leave-active-class="animate__animated animate__fadeOut"
+              name="fade"
+               mode="out-in"
               >
                 <router-view/>
             </transition>
@@ -26,7 +25,17 @@ export default {
 <style lang="scss">
 
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&family=Orbitron:wght@900&display=swap');
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
 
+.fade-enter,
+.fade-leave-active {
+  opacity: 0
+}
 #app {
   font-family: 'Jura', sans-serif;
   overflow: hidden;
