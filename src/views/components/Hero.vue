@@ -116,7 +116,7 @@
                       <div class="text-top">
                         <div>
                           <img src="img/brand/metawild-light-transparent.png" alt="hero-logo" class="hero-logo">
-                          <span style="font-family: 'Comforter', cursive;">METAWILD ICO</span>
+                          <span>METAWILD ICO</span>
                         </div>
                       </div>
                       <div class="text-bottom">

@@ -23,7 +23,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&family=Orbitron:wght@900&display=swap');
 .fade-enter-active,
 .fade-leave-active {

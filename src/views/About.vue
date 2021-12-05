@@ -4,7 +4,7 @@
        
             
                
-        <section class="section section-lg" style="background-image: url('img/brand/about_bg.jpg'); background-repeat: no-repeat; background-size: cover; ">
+        <section class="section section-lg" style="background-image: url('img/brand/token_bg.jpg'); background-repeat: no-repeat; background-size: cover; ">
            <!-- <div class="overlay">
                </div>  -->
             <div class="container-fluid">
@@ -13,27 +13,37 @@
                 <div class="container-inner">
                     <div class="main-content">
                     <div class="main-headings" id="main-headings-js">
-                    <p id="by-line">What MetaWild Is All About</p>
+                    <p id="by-line" style="font-size: 1.6em">What MetaWild Is All About</p>
 
                     <div class="heading">
-                        <h3 id="heading1">Experince</h3>
-                        <h3 id="heading2">Meta</h3>
-                        <h1 id="heading3">Wild</h1>
+                        <h3 id="heading1">The Wild Is</h3>
+                        <h3 id="heading2">Coming To</h3>
+                        <h1 id="heading3">Metaverse</h1>
                     </div>
 
                     <div class="shxcaort-bio">
-                        <p>
+                        <p  style="font-size: 1.3em">
                             MetaWild token focuses on wildlife conservation and protection of not only rare species but all wildlife globally.
                         </p>
                 
                     </div>
 
-                    <a href="#" class="link btn" onclick="readMore()">Read More <i class="ni ni-bold-right" style="margin-left: 2px;margin-top: -20%"></i></a>
+                    <!-- <a href="#" class="read-more" v-on:click="readMore()" v-if="readmore == 0">Read More <i class="ni ni-bold-right" style="margin-left: 2px;margin-top: -20%"></i></a> -->
+                 
+                    <!-- <a href="#" class="link btn" >Close <i class="ni ni-bold-right" style="margin-left: 2px;margin-top: -20%"></i></a> -->
+                    <a href="#"  class="read-more" v-on:click="readMore()" v-if="readmore == 0">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    <i class="ni ni-user-run" style="margin-right: 8px"></i> Get started
+                    </a>
+                    
                     </div>
                     <br>
                     <div class="more-info " id="more-info-js">
                         
-                        <h4 style="color: #fff">More About Us</h4>
+                        <h4 style="color: #fff; font-size: 1.6em">More About Us</h4>
 
                         <p>
                             MetaWild's vision is to make people money safely and securely 
@@ -64,20 +74,139 @@
 
 export default {
   name: "about",
-  components: {}
+  components: {},
+    data: function () {
+    return {
+      readmore: 0
+    }
+    },
+  methods: {
+      readMore: function () {
+        var expandInfo = document.getElementById("more-info-js");
+        var mainHeadings = document.getElementById("main-headings-js");
+
+        this.readmore = 1;
+
+        
+        mainHeadings.style.transform = "scale(0.7)";
+        expandInfo.style.height = "350px";
+      } 
+  }
 };
 </script>
 
+
 <style lang="scss" scoped>
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  opacity: 0.7;
-  z-index: 1;
+/*  hero button */
+
+.read-more {
+  position: relative;
+  display: inline-block;
+  padding: 20px 51px;
+  margin-right: 17.32px;
+  border-radius: 2px;
+  color: #fff;
+  min-width: 160px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  // margin-top: 200px;
+  font-family: "Jura", sans-serif;
+  filter: hue-rotate(0deg);
+  border: 1px solid #fff;
+  transition: all 0.1s linear;
+
+  &:hover {
+    border: 1px solid transparent;
+    color: #cacfaf;
+    text-decoration: none;
+    span {
+      position: absolute;
+      display: block;
+
+      &:nth-child(1) {
+        filter: hue-rotate(0deg);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, transparent, #3a86ff);
+        animation: animate1 1s linear infinite;
+      }
+      @keyframes animate1 {
+        0% {
+          left: -100%;
+        }
+        50%,
+        100% {
+          left: 100%;
+        }
+      }
+
+      &:nth-child(2) {
+        filter: hue-rotate(60deg);
+        top: -100%;
+        right: 0;
+        width: 3px;
+        height: 100%;
+        background: linear-gradient(180deg, transparent, #3a86ff);
+        animation: animate2 1s linear infinite;
+        animation-delay: 0.25s;
+      }
+
+      @keyframes animate2 {
+        0% {
+          top: -100%;
+        }
+        50%,
+        100% {
+          top: 100%;
+        }
+      }
+      &:nth-child(3) {
+        filter: hue-rotate(120deg);
+        bottom: 0;
+        right: 0;
+        width: 100%;
+
+        background: linear-gradient(270deg, transparent, #3a86ff);
+        animation: animate3 1s linear infinite;
+        animation-delay: 0.5s;
+      }
+      
+      @keyframes animate3 {
+        0% {
+          right: -100%;
+          height: 3px;
+        }
+        50%,
+        100% {
+          height: 2px;
+          right: 100%;
+        }
+      }
+
+      &:nth-child(4) {
+        filter: hue-rotate(300deg);
+        bottom: -100%;
+        left: 0;
+        width: 3px;
+        height: 100%;
+        background: linear-gradient(360deg, transparent, #3a86ff);
+        animation: animate4 1s linear infinite;
+        animation-delay: 0.75s;
+      }
+      @keyframes animate4 {
+        0% {
+          bottom: -100%;
+        }
+        50%,
+        100% {
+          bottom: 100%;
+        }
+      }
+    }
+  }
 }
 //Font
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
@@ -171,22 +300,21 @@ $desktop-breakpoint: 1200px;
   }
 }
 
-//Body 
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-
 .container-fluid {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
   margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
   height: 750px;
   color: #fff;
-  background-color: rgba(255,255,255,.06);
+  background-color: rgba(0,0,0,.3);
   font-size: 14px;
   font-family: "Jura", sans-serif;
   .container-inner { 
