@@ -241,7 +241,8 @@ body {
             margin-left: 150px;
           }
           #heading3 {
-            margin-top: -52px;
+            // font-family: 'Comforter', cursive;
+            margin-top: -45px;
             font-size: 800%;
             font-weight: 800;
             letter-spacing: 2px;

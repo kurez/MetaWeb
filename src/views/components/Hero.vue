@@ -116,7 +116,7 @@
                       <div class="text-top">
                         <div>
                           <img src="img/brand/metawild-light-transparent.png" alt="hero-logo" class="hero-logo">
-                          <span>Explore The Wild</span>
+                          <span style="font-family: 'Comforter', cursive;">METAWILD ICO</span>
                         </div>
                       </div>
                       <div class="text-bottom">
@@ -175,6 +175,7 @@ export default {
 
 header {
   position: relative;
+  font-family: "Jura", sans-serif;
   background-color: black;
   height: 100%;
   min-height: 25rem;
@@ -300,7 +301,7 @@ header .overlay {
 }
 
 .animated-title > div.text-bottom div {
-  font-size: 1.6vmin;
+  font-size: 1.54vmin;
   animation: showBottomText 0.5s;
   animation-delay: 1.75s;
   animation-fill-mode: forwards;
@@ -323,7 +324,7 @@ header .overlay {
   text-transform: uppercase;
   overflow: hidden;
   margin-top: 200px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Jura", sans-serif;
   filter: hue-rotate(0deg);
   border: 1px solid #fff;
   transition: all 0.1s linear;
