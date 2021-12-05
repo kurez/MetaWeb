@@ -21,7 +21,7 @@
                         <h1 id="heading3">Wild</h1>
                     </div>
 
-                    <div class="short-bio">
+                    <div class="shxcaort-bio">
                         <p>
                             MetaWild token focuses on wildlife conservation and protection of not only rare species but all wildlife globally.
                         </p>

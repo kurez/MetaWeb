@@ -35,7 +35,7 @@ export default {
 .fade-enter,
 .fade-leave-active {
   opacity: 0
-}
+}Q  
 #app {
   font-family: 'Jura', sans-serif;
   overflow: hidden;

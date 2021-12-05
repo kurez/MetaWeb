@@ -80,7 +80,7 @@
                                             <div></div>
                                         </div>
                                         
-                                        <router-link to="/" class="hex-content">
+                                        <router-link to="/" class="hex-content" v-on:click.native="closeHeader()">
                                          <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
                                             <span class="hex-content-inner">
                                                 <span class="icon">
@@ -104,7 +104,8 @@
                                             <div></div>
                                             <div></div>
                                         </div>
-                                         <router-link to="/metawild" class="hex-content">
+                                         <router-link to="/metawild" class="hex-content" v-on:click.native="closeHeader()">
+                                         <!-- <a href="#" onclick.native="navigate(about')"  class="hex-content"></a> -->
                                             <span class="hex-content-inner">
                                                 <span class="icon">
                                                     <i class="ni ni-user-run"></i>
@@ -128,7 +129,7 @@
                                             <div></div>
                                             <div></div>
                                         </div>
-                                         <router-link to="/tokenomics" class="hex-content">
+                                         <router-link to="/tokenomics" class="hex-content" v-on:click.native="closeHeader()">
                                             <span class="hex-content-inner">
                                                 <span class="icon">
                                                     <i class="ni ni-money-coins"></i>
@@ -151,7 +152,7 @@
                                             <div></div>
                                             <div></div>
                                         </div>
-                                       <a class="hex-content" href="files/metawild-whitepaper.pdf" download>
+                                       <a class="hex-content" href="files/metawild-whitepaper.pdf" download v-on:click.native="closeHeader()">
                                             <span class="hex-content-inner">
                                                 <span class="icon" style="margin-left: 25px">
                                                     <i class="ni ni-collection"></i>
@@ -230,6 +231,12 @@ export default {
     BaseNav,
     CloseButton,
     BaseDropdown
+  },
+  methods: {
+    closeHeader: function (event) {
+      // Uncheck
+      document.getElementById("menu-icon").checked = false;
+    }
   }
 };
 </script>
