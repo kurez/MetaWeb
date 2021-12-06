@@ -1,12 +1,7 @@
 <template>
-    <div>
-
-       
-            
-               
-        <section class="section section-lg" style="background-image: url('img/brand/token_bg.jpg'); background-repeat: no-repeat; background-size: cover; ">
-           <!-- <div class="overlay">
-               </div>  -->
+    <div>      
+        <section class="section section-lg" style="background-image: url('img/brand/about_bg.jpg'); background-repeat: no-repeat; background-size: cover; ">
+        <!-- <section class="section section-lg"> -->
             <div class="container-fluid">
                
             
@@ -36,7 +31,7 @@
                       <span></span>
                       <span></span>
                       <span></span>
-                    <i class="ni ni-user-run" style="margin-right: 8px"></i> Get started
+                    <i class="ni ni-user-run" style="margin-right: 8px"></i> Read More
                     </a>
                     
                     </div>
@@ -97,7 +92,7 @@ export default {
 
 
 <style lang="scss" scoped>
-/*  hero button */
+/*  read more button */
 
 .read-more {
   position: relative;
