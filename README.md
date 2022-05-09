@@ -1,6 +1,6 @@
 # MetaWeb
 
-This is ICO website  for MetaWild Finance companyusing [Vue.js](https://vuejs.org/).
+This is ICO website  for MetaWild Finance company using [Vue.js](https://vuejs.org/).
 
 ## Prerequisites
 You will need [Node.js](https://nodejs.org) version 6.0 or greater installed on your system.
